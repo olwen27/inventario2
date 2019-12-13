@@ -5,7 +5,7 @@
       include "functions/insert.php";
       ?>
 
-
+  
 <?php Add()?>
     
 <div class="row">
@@ -13,23 +13,20 @@
   <div class="col-sm-8">
     
     <form class="mt-4" action=""  method="post" >
-      <label for="name" >Product ID</label>
-      <input id="id"  type="text" name="id" required class="form-control " placeHolder="ID" >
+      <label for="name" >Producto ID</label>
+      <input id="id_producto"  type="text" name="id_producto" required class="form-control " placeHolder="ID" >
 
-      <label for="name" >Nombre Producto</label>
-      <input type="text"  name="nombre" required class="form-control" placeHolder="Nombre">
+      <label for="name" >ID Producto</label>
+      <input type="date"  name="fecha_entrada"  date-format="DD-MM-YYYY" required class="form-control" placeHolder="Fecha de entrada">
+
+      <label for="name" >Precio de Entrada</label>
+      <input type="text" name="precio_entrada" required class="form-control" placeHolder="Precio de Entrada">
 
       <label for="name" >Categoria</label>
       <input type="text"  name="categoria" required class="form-control" placeHolder="Categoria">
-
-      <label for="name" >Marca</label>
-      <input type="text"  name="marca" required class="form-control" placeHolder="Marca">
-
-      <label for="name" >Precio</label>
-      <input type="text" name="precio" required class="form-control" placeHolder="Precio">
-
+      
       <label for="name" >Cantidad</label>
-      <input type="text" name="cantidad" required class="form-control" placeHolder="Cantidad">
+      <input type="text"  name="cantidad" required class="form-control" placeHolder="Cantidad">
 
       <label for="descripcion">Descripcion</label>
     <textarea class="form-control" name="descrip" required id="descripcion" rows="3"></textarea>
